@@ -60,6 +60,9 @@ run().catch(console.dir)
 app.get('/', (req, res) => {
     res.send("running car mechanics server");
 })
+app.get('/hello', (req, res) => {
+    res.send("hello world!");
+})
 
 app.listen(port, () => {
     console.log("running car mechanics server on port:", port);
